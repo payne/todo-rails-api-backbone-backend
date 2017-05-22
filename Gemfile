@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', github: 'spastorino/rails', branch: 'rails-api'
-gem 'arel', github: 'rails/arel'
+gem 'rails', '~> 5.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
