@@ -14,8 +14,8 @@ var app = app || {};
 		model: app.Todo,
 
 		// Set the rails-api backend endpoint for this specific model
-		url: 'http://rails-and-backbone-payne.c9users.io/todos',
-		//url: 'http://localhost:3000/todos',
+		//url: 'http://rails-and-backbone-payne.c9users.io/todos',
+		url: 'http://localhost:3000/todos',
 
 		// Filter down the list of all todo items that are finished.
 		completed: function () {
