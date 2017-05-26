@@ -18,6 +18,16 @@
             </div>
         </form>
 </div>
+<script id="bookTemplate" type="text/template"> <img src="<%= coverImage %>"/>
+<ul>
+            <li><%= title %></li>
+            <li><%= author %></li>
+            <li><%= releaseDate %></li>
+            <li><%= keywords %></li>
+</ul>
+<button class="delete">Delete</button>
+</script>
+
 		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/underscore/underscore.js"></script>
 		<script src="node_modules/backbone/backbone.js"></script>
