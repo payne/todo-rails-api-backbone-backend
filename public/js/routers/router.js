@@ -18,6 +18,7 @@ var app = app || {};
 			// Trigger a collection filter event, causing hiding/unhiding
 			// of Todo view items
 			app.todos.trigger('filter');
+			console.log("Just triggered a collection filter event.  app.TodoFilter="+app.TodoFilter);
 		}
 	});
 
