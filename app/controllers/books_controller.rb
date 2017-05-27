@@ -26,7 +26,7 @@ class BooksController < ApplicationController
 
   # PATCH/PUT /books/1
   def update
-    if @book.update(todo_params)
+    if @book.update(book_params)
       render json: @book
     else
       render json: @book.errors, status: :unprocessable_entity
