@@ -19,5 +19,21 @@ app.BookView = Backbone.View.extend({
 		this.model.destroy();
 		// Delete view
 		this.remove();
-	}
+	},
+  updateBook: function(e) {
+    console.log(this);
+    var thisModel = this.model;
+    console.log("Was that a model?");
+    e.preventDefault();
+    var formData = {};
+    $( '#addBook div' ).children( 'input' ).each( function( i, el ) {
+      if( $( el ).val() != '' ){
+         console.log(thisModel);
+         console.log("Was that this.model?");
+         thisModel.set(el.id,$(el).val());
+      }
+    });
+    this.model.save(); // updates in database!
+    //render(); // doesn't render to screen
+  }
 });
