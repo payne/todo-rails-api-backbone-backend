@@ -9,14 +9,15 @@ app.BookView = Backbone.View.extend({
 		// tmpl is a function that takes a JSON object and returns html
 		// this.el is what we defined in tagName. use $el to get access // to jQuery html() function
 		this.$el.html( this.template( this.model.toJSON() ));
-		return this; 
+		return this;
 	},
 	events: {
-            'click .delete': 'deleteBook'
+            'click .delete': 'deleteBook',
+            'click .update': 'updateBook'
 	},
 	deleteBook: function() { // Delete model
 		this.model.destroy();
 		// Delete view
-		this.remove(); 
+		this.remove();
 	}
 });
