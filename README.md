@@ -3,3 +3,6 @@ https://wyeworks.com/blog/2015/6/11/how-to-build-a-rails-5-api-only-and-backbone
 then added the public/library backbone app based on https://addyosmani.com/backbone-fundamentals/
 Stumbled a bit on the rails side of things.   Tried to make good commit comments.  Need to 
 recreate soon from scratch.
+
+This might be helpful: https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
+
